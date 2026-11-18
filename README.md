@@ -27,5 +27,5 @@ chmod +x upgrade.sh
 ```
 4.Запустите скрипт 
 ```
-./upgrade.sh
+sudo ./upgrade.sh
 ```
