@@ -7,8 +7,8 @@
 
 Принудительное удаление старого файла блокировки ``rm -f /var/lib/pacman/db.lck`` и обновление списка зеркал ``pacman-mirrors --fasttrack 5``.
 
-Принудительное обновление пакетов ``pacman -Syy --noconfirm`` и ``pacman -Syu --noconfirm --overwrite "*"``
-Флаг --overwrite "*" используется для разрешения файловых конфликтов при переустановке пакетов.
+Принудительное обновление пакетов ``pacman -Syy --noconfirm`` и ``pacman -Syu --noconfirm --overwrite "*"``,
+флаг --overwrite "*" используется для разрешения файловых конфликтов при переустановке пакетов.
 
 Обновление пакетов AUR через ``yay -Sua  --noconfirm`` с сохранением вывода в текстовый файл ``LOG_FILE="$HOME/update_log.txt"``.
 
@@ -19,6 +19,13 @@ git clone https://github.com/TwixLover0/bash.git
 ```
 2 Перейдите в папку проекта
 ``` 
-cs bash
+cd bash
 ```
-3.
+3.Выдайте права для выполнения скрипта
+```
+chmod +x upgrade.sh
+```
+4.Запустите скрипт 
+```
+./upgrade.sh
+```
