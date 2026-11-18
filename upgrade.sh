@@ -1,5 +1,5 @@
 #! /bin/bash
-LOG_FILE="/home/svino11/update_log.txt"
+LOG_FILE="$HOME/update_log.txt"
 
 echo "[$(date +%F)] НАЧАЛО  ОБНОВЛЕНИЯ" >> "$LOG_FILE"
 
